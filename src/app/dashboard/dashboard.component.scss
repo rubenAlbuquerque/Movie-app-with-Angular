@@ -1,0 +1,137 @@
+$body-bg: #ce1111;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+// .popular {
+//   background-color: #ce1111;
+//   padding: 20px 0px;
+//   margin-top: 120px;
+// }
+
+.title {
+  color: #ffffff;
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 30px;
+  font-family: roboto;
+}
+.title2 {
+  color: #ffffff;
+  margin: 20px 0px;
+  font-size: 30px;
+  font-family: roboto;
+  font-weight: 100;
+  line-height: 39px;
+}
+.container {
+  margin: 40px auto;
+  // background-color: #ce1111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container {
+  $w :190px;
+  // margin-top: 120px;
+  // background-color: rgb(219, 219, 38, 0.9);
+  display: grid;
+  grid-template-columns: repeat(8, $w);
+  justify-content: center;
+
+  max-width: 1600px;
+  grid-gap: 10px 10px;
+
+  @media all and (max-width: 1680px) {
+    $w : $w - 30px;
+    grid-template-columns: repeat(7, $w);
+
+  }
+  @media all and (max-width: 1440px) {
+    grid-template-columns: repeat(6, $w);
+  }
+  @media all and (max-width: 1300px) {
+    grid-template-columns: repeat(5, $w);
+  }
+  @media all and (max-width: 1100px) {
+    grid-template-columns: repeat(4, $w);
+  }
+  @media all and (max-width: 900px) {
+    grid-template-columns: repeat(3, $w);
+  }
+  @media all and (max-width: 700px) {
+    grid-template-columns: repeat(2, $w);
+  }
+  @media all and (max-width: 500px) {
+    grid-template-columns: repeat(1, $w);
+  }
+}
+
+.movie {
+  text-align: center;
+  // border-radius: 5px;
+  // height: 300px;
+  cursor: pointer;
+
+  .movie-img {
+    // height: 280px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .movie-info {
+    padding: 5px 10px 0px 0px;
+    width: 100%;
+
+    .movie-name-rating {
+      font-family: roboto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+      font-size: 15px;
+      color: #fff;
+      font-weight: 500;
+      padding: auto;
+
+      // .movie-name {
+      // font-size: 14px;
+      // color: #fff;
+      // }
+
+      .movie-rating {
+        font-size: 13px;
+      }
+    }
+
+    .movie-description {
+      font-family: roboto;
+      display: flex;
+      font-size: 13px;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      line-height: 17px;
+      color: #aaaaaa;
+
+      .movie-type {
+        padding: 0px 5px;
+        border: #aaaaaa 1px solid;
+        // font-size: 14px;
+        // color: #aaaaaa;
+      }
+    }
+
+    // .fa-star {
+    //   font-size: 24px;
+    //   color: rgb(255, 0, 0);
+    // }
+  }
+}

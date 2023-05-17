@@ -1,0 +1,42 @@
+<div id="search-component">
+  <!-- <input #searchBox id="searchbox" (input)="search(searchBox.value)" /> -->
+  <input
+    #searchBox
+    class="searchbox"
+    type="text"
+    placeholder="Search..."
+    (input)="search(searchBox.value)"
+  />
+
+  <ul class="search-result">
+    <!-- <p class="title">{{movies$}}</p> -->
+
+    <div class="movies-search" *ngIf="movies$">
+      <li *ngFor="let movie of movies$ | async">
+        <!-- <p class="title" >ola1</p> -->
+        <div class="movie-search" routerLink="/detail/{{ movie.id }}">
+          <div class="movie-search-img">
+            <img src="{{ movie.img }}" />
+          </div>
+          <!-- {{ movie.name }} -->
+          <div class="movie-search-info">
+            <div class="movie-search-name-rating">
+              <p class="movie-search-name">{{ movie.name }}</p>
+              <p class="movie-search-rating">5 S <i class="fa-solid fa-star"></i></p>
+            </div>
+            <div class="movie-search-description">
+              <p class="movie-search-time">
+                2018 -
+                <!-- <span class="dot"></span> -->
+                2h15min
+              </p>
+              <p class="movie-search-type">Movie</p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </div>
+  </ul>
+</div>
+
+<!-- Avatar -->

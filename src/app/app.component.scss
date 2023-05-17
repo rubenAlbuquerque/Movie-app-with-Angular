@@ -1,0 +1,161 @@
+// h1 {
+//   font-size: 1.2em;
+//   color: #999;
+//   margin-bottom: 0;
+// }
+// h2 {
+//   font-size: 2em;
+//   margin-top: 0;
+//   padding-top: 0;
+// }
+// nav a {
+//   padding: 5px 10px;
+//   text-decoration: none;
+//   margin-top: 10px;
+//   margin-right: 5px;
+//   display: inline-block;
+//   background-color: #eee;
+//   border-radius: 4px;
+// }
+// nav a:visited,
+// a:link {
+//   color: #607d8b;
+// }
+// nav a:hover {
+//   color: #039be5;
+//   background-color: #cfd8dc;
+// }
+// nav a.active {
+//   color: #039be5;
+// }
+
+$bg-color: #000000;
+$font-color: #e8e8e8;
+$font-color-hover: #ffe400;
+
+.navbar {
+  display: flex;
+  //   justify-content: space-between;
+  align-items: center;
+  background-color: $bg-color;
+  height: 70px;
+  padding: 0 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+  &-logo {
+    img {
+      height: 70px;
+      margin-right: 40px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-links {
+    // display: flex;
+    // align-items: center;
+
+    a {
+      text-decoration: none;
+      font-family: roboto, sans-serif;
+      color: $font-color;
+
+      font-size: 16px;
+      margin-right: 20px;
+
+      &:hover {
+        color: $font-color-hover;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $bg-color;
+  // height: 70px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  color: $font-color;
+  font-size: 16px;
+  font-family: roboto, sans-serif;
+  // margin-top: 50px;
+  padding: 50px 200px;
+
+  .footer-content {
+    display: flex;
+    // justify-content:space-between;
+    // align-items: center;
+    // background-color: #b9b9b9;
+    padding: 0px 30px;
+  }
+
+  .footer-section-about {
+    // display: flex;
+    // width: 400px;
+
+    .logo {
+      padding: 10px;
+
+      &-img {
+        // background-color: rgb(72, 98, 98);
+        height: 100px;
+        width: 250px;
+        padding: 10px;
+        margin-right: 40px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .footer-section-links {
+    // display: grid;
+    // grid-template-columns: 300px 400px;
+    // grid-gap: 20px 20px;
+    // background-color: #7c795b;
+    // margin-top: 0px;
+    padding-top: 0%;
+    // width: 20%;
+
+    .description {
+      // margin-top: 0px;
+      // padding-top: 0%;
+      width: 50%;
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-between;
+
+      align-items: center;
+      // background-color: #a6a6a6;
+      padding: 10px;
+      width: 50%;
+
+      li,
+      a {
+        text-decoration: none;
+        list-style-type: none;
+        font-family: roboto, sans-serif;
+        color: $font-color;
+        margin: 0;
+        padding: 0;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+
+        // font-size: 16px;
+        margin-right: 20px;
+
+        &:hover {
+          color: $font-color-hover;
+        }
+      }
+    }
+  }
+}

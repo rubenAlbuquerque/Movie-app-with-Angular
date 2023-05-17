@@ -1,0 +1,76 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  height: 70px;
+  padding: 0 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.navbar-logo img {
+  height: 70px;
+  margin-right: 40px;
+}
+.navbar-logo img:hover {
+  cursor: pointer;
+}
+.navbar-links a {
+  text-decoration: none;
+  font-family: roboto, sans-serif;
+  color: #e8e8e8;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.navbar-links a:hover {
+  color: #ffe400;
+}
+
+.footer {
+  background-color: #000000;
+  color: #e8e8e8;
+  font-size: 16px;
+  font-family: roboto, sans-serif;
+  padding: 50px 200px;
+}
+.footer .footer-content {
+  display: flex;
+  padding: 0px 30px;
+}
+.footer .footer-section-about .logo {
+  padding: 10px;
+}
+.footer .footer-section-about .logo-img {
+  height: 100px;
+  width: 250px;
+  padding: 10px;
+  margin-right: 40px;
+}
+.footer .footer-section-about .logo-img:hover {
+  cursor: pointer;
+}
+.footer .footer-section-links {
+  padding-top: 0%;
+}
+.footer .footer-section-links .description {
+  width: 50%;
+}
+.footer .footer-section-links .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 50%;
+}
+.footer .footer-section-links .links li,
+.footer .footer-section-links .links a {
+  text-decoration: none;
+  list-style-type: none;
+  font-family: roboto, sans-serif;
+  color: #e8e8e8;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+}
+.footer .footer-section-links .links li:hover,
+.footer .footer-section-links .links a:hover {
+  color: #ffe400;
+}/*# sourceMappingURL=app.component.css.map */

@@ -1,0 +1,57 @@
+<nav class="navbar">
+  <div class="navbar-logo" routerLink="/dashboard">
+    <img src="../assets/Logo.png" alt="Logo" />
+  </div>
+  <div class="navbar-links">
+    <a routerLink="/dashboard">Home</a>
+    <a routerLink="/movies">List of Movies</a>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<app-messages></app-messages>
+
+<footer>
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-section-about">
+        <div class="logo">
+          <img class="logo-img" src="../assets/Logo.png" alt="Logo" />
+
+        </div>
+        <div class="footer-bottom">&copy; Stream Sugester | Designed by Rúben Santos</div>
+      </div>
+      <div class="footer-section-links">
+        <!-- <h2>Quick Links</h2> -->
+        <br />
+        <div class="description">
+          <p>
+            Stream Sugester is a Free Movies streaming site with zero ads. We
+            let you watch movies online without having to register or paying,
+            with over 10000 movies and TV-Series. You can also Download full
+            movies from Fboxtv and watch it later if you want.
+          </p>
+        </div>
+
+        <div>
+          <ul class="links">
+            <a href="#">
+              <li>Events</li>
+            </a>
+            <a href="#">
+              <li>Team</li>
+            </a>
+            <a href="#">
+              <li>Mentors</li>
+            </a>
+            <a href="#">
+              <li>Gallery</li>
+            </a>
+            <a href="#">
+              <li>Terms and Conditions</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
